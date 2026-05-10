@@ -1,0 +1,411 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cultos | Tres Caídas</title>
+    <!-- Bootstrap 5 CSS + Icons + Google Fonts -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css">
+    <link
+        href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,300;14..32,400;14..32,600;14..32,700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+        rel="stylesheet">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/custom.css">
+    <link rel="icon" href="img/favicon.ico">
+</head>
+
+<body>
+
+    <!-- NAVBAR -->
+    <nav class="navbar navbar-expand-lg fixed-top py-3">
+        <div class="container">
+            <a class="navbar-brand" href="index.html">
+                <img src="img/escudo.png" alt="Escudo Tres Caídas" height="60">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarMain">
+                <ul class="navbar-nav ms-auto mb-2 mb-lg-0 gap-3">
+                    <li class="nav-item"><a class="nav-link" href="index.html">Inicio</a></li>
+                    <li class="nav-item"><a class="nav-link" href="hermandad.html">Hermandad</a></li>
+                    <li class="nav-item"><a class="nav-link" href="titulares.html">Titulares</a></li>
+                    <li class="nav-item"><a class="nav-link active" href="cultos.html">Cultos</a></li>
+                    <li class="nav-item"><a class="nav-link" href="multimedia.html">Multimedia</a></li>
+                </ul>
+                <a href="#" class="btn btn-outline-custom ms-lg-3" data-bs-toggle="modal"
+                    data-bs-target="#donarModal">Donar</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- HEADER -->
+    <section class="page-header py-5 mt-5">
+        <div class="container text-center">
+            <h1 class="playfair display-4">Cultos y Estación de Penitencia</h1>
+            <div class="divider"></div>
+            <p class="lead text-secondary">Lunes Santo · Hermandad de las Tres Caídas · Huelva</p>
+        </div>
+    </section>
+
+    <!-- CALENDARIO DE CULTOS - MINIMALISTA -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-8">
+                <div class="text-center mb-5">
+                    <h2 class="playfair display-6 mb-3">Calendario de Cultos</h2>
+                    <div class="divider"></div>
+                    <p class="text-secondary">Vive la fe y la devoción en la Parroquia del Sagrado Corazón de Jesús</p>
+                </div>
+
+                <!-- Cultos internos - lista minimalista -->
+                <div class="cultos-list mb-5">
+                    <div class="culto-card d-flex align-items-center p-3 mb-2 rounded-3">
+                        <div class="culto-fecha text-center me-4">
+                            <span class="dia">1-3</span>
+                            <span class="mes">ABR</span>
+                        </div>
+                        <div class="culto-info flex-grow-1">
+                            <h3 class="h6 fw-bold mb-0">Triduo al Santísimo Cristo de las Tres Caídas</h3>
+                            <small class="text-muted">19:30h</small>
+                        </div>
+                        <i class="bi bi-chevron-right text-primary opacity-50"></i>
+                    </div>
+
+                    <div class="culto-card d-flex align-items-center p-3 mb-2 rounded-3">
+                        <div class="culto-fecha text-center me-4">
+                            <span class="dia">8-10</span>
+                            <span class="mes">ABR</span>
+                        </div>
+                        <div class="culto-info flex-grow-1">
+                            <h3 class="h6 fw-bold mb-0">Triduo a María Santísima del Amor</h3>
+                            <small class="text-muted">19:30h</small>
+                        </div>
+                        <i class="bi bi-chevron-right text-primary opacity-50"></i>
+                    </div>
+
+                    <div class="culto-card d-flex align-items-center p-3 mb-2 rounded-3">
+                        <div class="culto-fecha text-center me-4">
+                            <span class="dia">VIE</span>
+                            <span class="mes">DOL.</span>
+                        </div>
+                        <div class="culto-info flex-grow-1">
+                            <h3 class="h6 fw-bold mb-0">Vía Crucis Cuaresmal</h3>
+                            <small class="text-muted">20:00h</small>
+                        </div>
+                        <i class="bi bi-chevron-right text-primary opacity-50"></i>
+                    </div>
+
+                    <div class="culto-card d-flex align-items-center p-3 mb-2 rounded-3">
+                        <div class="culto-fecha text-center me-4">
+                            <span class="dia">DOM</span>
+                            <span class="mes">RAMOS</span>
+                        </div>
+                        <div class="culto-info flex-grow-1">
+                            <h3 class="h6 fw-bold mb-0">Función Principal de Instituto</h3>
+                            <small class="text-muted">12:00h</small>
+                        </div>
+                        <i class="bi bi-chevron-right text-primary opacity-50"></i>
+                    </div>
+
+                    <div class="culto-card d-flex align-items-center p-3 mb-2 rounded-3">
+                        <div class="culto-fecha text-center me-4">
+                            <span class="dia">ÚLT.</span>
+                            <span class="mes">VIE</span>
+                        </div>
+                        <div class="culto-info flex-grow-1">
+                            <h3 class="h6 fw-bold mb-0">Misa de Hermandad</h3>
+                            <small class="text-muted">20:30h</small>
+                        </div>
+                        <i class="bi bi-chevron-right text-primary opacity-50"></i>
+                    </div>
+                </div>
+
+                <!-- Horario de misas - tarjeta minimalista -->
+                <div class="misas-card p-4 rounded-4 text-center">
+                    <i class="bi bi-clock-history fs-1 mb-3 d-block text-primary"></i>
+                    <h3 class="h5 fw-bold mb-3">Horario de Misas</h3>
+                    <p class="mb-2"><strong>Parroquia del Sagrado Corazón de Jesús</strong><br>
+                        <span class="small text-muted">C/ Presbítero Pablo Rodríguez</span>
+                    </p>
+
+                    <div class="row mt-4">
+                        <div class="col-4">
+                            <div class="horario-simple">
+                                <span class="d-block fw-bold">Domingos</span>
+                                <small class="text-primary">12:00h</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="horario-simple">
+                                <span class="d-block fw-bold">Laborables</span>
+                                <small class="text-primary">19:30h</small>
+                                <small class="d-block text-muted">(ex. lunes)</small>
+                            </div>
+                        </div>
+                        <div class="col-4">
+                            <div class="horario-simple">
+                                <span class="d-block fw-bold">Sábados</span>
+                                <small class="text-primary">19:30h</small>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="confesiones-mini mt-4 pt-3 border-top">
+                        <i class="bi bi-info-circle me-1 text-secondary"></i>
+                        <small class="text-secondary">Confesiones: media hora antes de cada misa</small>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- ESTACIÓN DE PENITENCIA - LUNES SANTO -->
+    <section class="py-5 bg-light">
+        <div class="container">
+            <div class="text-center mb-5">
+                <h2 class="playfair display-5">Estación de Penitencia</h2>
+                <p class="lead">Lunes Santo</p>
+                <div class="divider"></div>
+            </div>
+
+            <!-- Horario resumen -->
+            <div class="row g-4 mb-5">
+                <div class="col-md-3">
+                    <div class="text-center p-3 bg-white rounded-4 shadow-sm">
+                        <i class="bi bi-box-arrow-right fs-1 text-primary"></i>
+                        <h4 class="h5 mt-2">Salida</h4>
+                        <p class="mb-0"><strong>16:45h</strong><br>Parroquia Sagrado Corazón</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-3 bg-white rounded-4 shadow-sm">
+                        <i class="bi bi-flag fs-1 text-primary"></i>
+                        <h4 class="h5 mt-2">Entrada Carrera Oficial</h4>
+                        <p class="mb-0"><strong>20:35h</strong><br>C/ Rábida</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-3 bg-white rounded-4 shadow-sm">
+                        <i class="bi bi-flag-fill fs-1 text-primary"></i>
+                        <h4 class="h5 mt-2">Salida Carrera Oficial</h4>
+                        <p class="mb-0"><strong>21:45h</strong><br>Plaza de las Monjas</p>
+                    </div>
+                </div>
+                <div class="col-md-3">
+                    <div class="text-center p-3 bg-white rounded-4 shadow-sm">
+                        <i class="bi bi-box-arrow-in-left fs-1 text-primary"></i>
+                        <h4 class="h5 mt-2">Entrada</h4>
+                        <p class="mb-0"><strong>02:15h</strong><br>Parroquia Sagrado Corazón</p>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Itinerario completo -->
+            <div class="row g-4">
+                <div class="col-lg-12">
+                    <div class="card border-0 shadow-sm">
+                        <div class="card-body p-4">
+                            <h3 class="playfair h4 mb-4">
+                                <i class="bi bi-map-fill text-primary me-2"></i>
+                                Itinerario Completo · Lunes Santo
+                            </h3>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="h6 text-primary mb-3">Salida y primeras calles</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2"><i class="bi bi-pin-map-fill me-2 text-danger"></i>
+                                            <strong>16:45h</strong> - Salida Templo
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Federico Molina
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Alameda Sundheim
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> El Punto Berdigón
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Plaza Niña La Paz
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Rábida</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Murillo</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Gob. Alonso Rascón
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <h4 class="h6 text-primary mb-3">Carrera Oficial</h4>
+                                    <ul class="list-unstyled mb-4">
+                                        <li class="mb-2"><i class="bi bi-flag-fill me-2 text-success"></i> <strong
+                                                class="text-primary">20:35h</strong> - Entrada Carrera Oficial</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Carrera Oficial
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Carrera Oficial
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Carrera Oficial
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Carrera Oficial
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-flag-fill me-2 text-warning"></i> <strong
+                                                class="text-primary">21:45h</strong> - Salida Carrera Oficial</li>
+                                    </ul>
+                                </div>
+                            </div>
+
+                            <div class="row">
+                                <div class="col-md-6">
+                                    <h4 class="h6 text-primary mb-3">Vuelta al barrio</h4>
+                                    <ul class="list-unstyled">
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Palos</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Quintero Báez</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Cuesta Tres Caídas
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Federico Mayo</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Juan Niño</li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Ismael Serrano
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Vicente Y. Pinzón
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> Pasaje A. de Palos
+                                        </li>
+                                        <li class="mb-2"><i class="bi bi-arrow-right-short me-2"></i> <strong
+                                                class="text-primary">02:15h</strong> - Entrada Templo</li>
+                                    </ul>
+                                </div>
+                                <div class="col-md-6">
+                                    <div class="alert alert-accent mt-2">
+                                        <i class="bi bi-info-circle-fill me-2"></i>
+                                        <strong>Recorrido oficial aprobado por el Consejo de Hermandades y Cofradías de
+                                            Huelva</strong>
+                                        <br><small>Horarios aproximados sujetos a la duración de la estación de
+                                            penitencia.</small>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- MAPA ILUSTRATIVO -->
+    <div class="container my-5">
+        <div class="row justify-content-center">
+            <div class="col-lg-10">
+                <div class="card border-0 shadow-sm">
+                    <div class="card-body p-4 text-center">
+                        <h3 class="playfair h4 mb-3">
+                            <i class="bi bi-geo-alt-fill text-primary me-2"></i>
+                            Recorrido Gráfico
+                        </h3>
+                        <p class="text-secondary mb-4">La hermandad recorre las principales calles del centro de Huelva
+                            hasta la Carrera Oficial, volviendo después al barrio del Polvorín.</p>
+
+                        <!-- Mapa de texto representativo -->
+                        <div class="bg-light rounded-4 p-4">
+                            <div class="row align-items-center">
+                                <div class="col-md-5 text-end">
+                                    <strong>Parroquia Sagrado Corazón</strong><br>
+                                    <small class="text-muted">Salida 16:45h</small>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <i class="bi bi-arrow-right-circle-fill fs-2 text-primary"></i>
+                                </div>
+                                <div class="col-md-5 text-start">
+                                    <strong>Carrera Oficial</strong><br>
+                                    <small class="text-muted">Entrada 20:35h</small>
+                                </div>
+                            </div>
+                            <hr>
+                            <div class="row align-items-center">
+                                <div class="col-md-5 text-end">
+                                    <strong>Carrera Oficial</strong><br>
+                                    <small class="text-muted">Salida 21:45h</small>
+                                </div>
+                                <div class="col-md-2 text-center">
+                                    <i class="bi bi-arrow-right-circle-fill fs-2 text-primary"></i>
+                                </div>
+                                <div class="col-md-5 text-start">
+                                    <strong>Parroquia Sagrado Corazón</strong><br>
+                                    <small class="text-muted">Entrada 02:15h</small>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="mt-4">
+                            <span class="badge bg-primary px-3 py-2">Lunes Santo</span>
+                            <span class="badge bg-accent px-3 py-2">Tres Caídas</span>
+                            <span class="badge bg-secondary px-3 py-2">Polvorín</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- FOOTER -->
+    <footer class="footer-custom pt-5 pb-4">
+        <div class="container">
+            <div class="row gy-4">
+                <div class="col-md-4">
+                    <img src="img/logo.png" alt="Logo Tres Caídas" height="50" class="mb-3">
+                    <p>Hermandad de las Tres Caídas de Huelva. <strong>Lunes Santo</strong>. Parroquia del Sagrado
+                        Corazón de Jesús.</p>
+                    <div class="social-icons">
+                        <a href="https://www.instagram.com/hdadtrescaidashuelva/" target="_blank"><i
+                                class="bi bi-instagram"></i></a>
+                        <a href="#"><i class="bi bi-facebook"></i></a>
+                        <a href="#"><i class="bi bi-twitter-x"></i></a>
+                        <a href="#"><i class="bi bi-youtube"></i></a>
+                    </div>
+                </div>
+                <div class="col-md-4">
+                    <h5>Contacto</h5>
+                    <ul class="list-unstyled">
+                        <li><i class="bi bi-geo-alt"></i> Casa Hermandad: C/ Puebla de Guzmán, Polvorín</li>
+                        <li><i class="bi bi-envelope"></i> hermandaddelastrescaidas@gmail.com</li>
+                        <li><i class="bi bi-telephone"></i> 959 80 88 78</li>
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5>Horario de Secretaría</h5>
+                    <p>De lunes a viernes de 20:00h a 21:30h</p>
+                    <a href="#" class="btn btn-outline-light btn-sm" data-bs-toggle="modal"
+                        data-bs-target="#donarModal">Colabora</a>
+                </div>
+            </div>
+            <hr class="mt-4 opacity-25">
+            <div class="text-center small">© 2026 Hermandad de las Tres Caídas - Diseño profesional con ❤️ desde Huelva
+            </div>
+        </div>
+    </footer>
+
+    <!-- MODAL DONACIÓN -->
+    <div class="modal fade" id="donarModal" tabindex="-1">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header bg-primary text-white">
+                    <h5 class="modal-title">Apoya nuestra labor</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="modal"></button>
+                </div>
+                <div class="modal-body">
+                    <p>Tu colaboración ayuda a mantener el culto, las obras sociales y el patrimonio de la Hermandad.
+                    </p>
+                    <div class="input-group mb-3">
+                        <span class="input-group-text">€</span>
+                        <input type="number" class="form-control" placeholder="Cantidad">
+                        <button class="btn btn-primary" type="button">Donar</button>
+                    </div>
+                    <small>Transferencia: ES12 1234 5678 9012 3456 7890 (Concepto: Donación)</small>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/main.js"></script>
+</body>
+
+</html>
