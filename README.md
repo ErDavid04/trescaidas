@@ -2,4 +2,4 @@
 
 Este es el enlace de la página web:
 
-🌐 <a href="https://erdavid04.github.io/trescaidas/" target="_blank" rel="noopener noreferrer">Ver Página Web</a>
+🌐 [Ver Página Web](https://erdavid04.github.io/trescaidas/)
